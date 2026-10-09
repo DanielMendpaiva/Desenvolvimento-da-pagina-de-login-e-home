@@ -1,0 +1,37 @@
+mat-toolbar {
+  background-color: #3f51b5;
+  color: #ffffff;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  min-width: 44px;
+  padding: 0 8px;
+}
+
+.nav-logo {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.nav-text-link {
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
