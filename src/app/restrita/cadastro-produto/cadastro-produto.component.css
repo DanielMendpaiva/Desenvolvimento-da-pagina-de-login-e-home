@@ -1,0 +1,101 @@
+.cadastro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.cadastro-card {
+  width: 100%;
+  max-width: 680px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.icon-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #e8eaf6;
+  color: #3f51b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.header-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.prefix-money {
+  font-weight: 600;
+  color: #495057;
+}
+
+.preview-box {
+  background-color: #f8f9fa;
+  border: 1px dashed #ced4da;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.preview-label {
+  font-size: 13px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.preview-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.actions-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.btn-cancelar {
+  height: 44px;
+}
+
+.btn-salvar {
+  height: 44px;
+  background-color: #3f51b5 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 0 24px;
+}

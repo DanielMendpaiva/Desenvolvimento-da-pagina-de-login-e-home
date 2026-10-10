@@ -1,0 +1,41 @@
+.toolbar-restrita {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 0 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffd54f;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actions a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.active-link {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+.btn-logout {
+  margin-left: 10px;
+  height: 36px;
+  font-weight: 500;
+}

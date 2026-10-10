@@ -1,0 +1,77 @@
+.lista-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-section h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.btn-novo {
+  background-color: #3f51b5 !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  height: 42px;
+  padding: 0 20px;
+}
+
+.card-table {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+  padding: 14px 16px;
+}
+
+.table tbody td {
+  padding: 14px 16px;
+}
+
+.thumb-produto {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.desc-cell {
+  max-width: 320px;
+  font-size: 13.5px;
+}
+
+.preco-cell {
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 15px;
+}

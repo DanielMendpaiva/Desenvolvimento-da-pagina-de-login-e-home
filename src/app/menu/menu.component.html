@@ -4,12 +4,19 @@
       <img src="./assets/img/logo.png" alt="Logo" class="nav-logo">
     </a>
     <a mat-button routerLink="/inicio" class="nav-text-link">Produtos</a>
+    <a mat-button *ngIf="estaLogado()" routerLink="/restrita" class="nav-text-link">
+      <mat-icon class="icon-inline">admin_panel_settings</mat-icon> Área Restrita
+    </a>
   </div>
 
   <span class="example-spacer"></span>
 
   <div class="nav-right">
-    <a mat-button routerLink="/login" class="nav-text-link">Login</a>
+    <a mat-button *ngIf="!estaLogado()" routerLink="/login" class="nav-text-link">Login</a>
+    <button mat-button *ngIf="estaLogado()" (click)="logout()" class="nav-text-link">
+      <mat-icon class="icon-inline">logout</mat-icon> Sair
+    </button>
   </div>
 </mat-toolbar>
+
 

@@ -18,6 +18,7 @@ import {MatCardModule} from '@angular/material/card';
 
 
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,8 +27,10 @@ import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
-
-
+import { RestritaComponent } from './restrita/restrita.component';
+import { MenuRestritaComponent } from './restrita/menu-restrita/menu-restrita.component';
+import { ListaProdutoComponent } from './restrita/lista-produto/lista-produto.component';
+import { CadastroProdutoComponent } from './restrita/cadastro-produto/cadastro-produto.component';
 
 @NgModule({
   declarations: [
@@ -36,18 +39,18 @@ import { RodapeComponent } from './rodape/rodape.component';
     LoginComponent,
     MenuComponent,
     RodapeComponent,
+    RestritaComponent,
+    MenuRestritaComponent,
+    ListaProdutoComponent,
+    CadastroProdutoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    HttpClientModule,
     MatButtonModule,
-    /*Após adicionar o Angular Material, adicionar nessa parte do código 
-    as importações dos módulos que serão utilizados no projeto, como por exemplo:
-    MatButtonModule
-    MatCardModule
-    */
     MatCardModule,
     MatFormFieldModule,
     MatGridListModule,

@@ -1,0 +1,48 @@
+<div class="lista-container">
+  <div class="header-section">
+    <div>
+      <h2>Gerenciamento de Produtos</h2>
+      <p class="subtitle">Consumo de dados em tempo real da API REST</p>
+    </div>
+    <a mat-raised-button color="primary" routerLink="/restrita/cadastro" class="btn-novo">
+      <mat-icon>add</mat-icon> Novo Produto
+    </a>
+  </div>
+
+  <div class="table-responsive card-table">
+    <table class="table table-hover align-middle mb-0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Capa</th>
+          <th>Nome do Produto</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+          <th class="text-center">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of produtos">
+          <td class="fw-bold text-muted">#{{ p.id }}</td>
+          <td>
+            <img [src]="p.foto" [alt]="p.produto" class="thumb-produto" onerror="this.src='./assets/img/jogo1.PNG'">
+          </td>
+          <td class="fw-semibold">{{ p.produto }}</td>
+          <td class="text-secondary desc-cell">{{ p.descricao }}</td>
+          <td class="preco-cell">{{ p.preco | currency:'BRL':'symbol':'1.2-2' }}</td>
+          <td class="text-center">
+            <button mat-icon-button color="warn" (click)="excluir(p.id)" title="Excluir produto">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+
+        <tr *ngIf="produtos.length === 0">
+          <td colspan="6" class="text-center py-4 text-muted">
+            Nenhum produto cadastrado na API no momento.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

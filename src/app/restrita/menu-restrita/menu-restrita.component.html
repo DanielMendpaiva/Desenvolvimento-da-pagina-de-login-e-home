@@ -1,0 +1,23 @@
+<mat-toolbar color="accent" class="toolbar-restrita">
+  <div class="brand">
+    <mat-icon>admin_panel_settings</mat-icon>
+    <span>Painel Administrativo - Área Restrita</span>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="actions">
+    <a mat-button routerLink="/restrita/lista" routerLinkActive="active-link">
+      <mat-icon>list</mat-icon> Lista de Produtos
+    </a>
+    <a mat-button routerLink="/restrita/cadastro" routerLinkActive="active-link">
+      <mat-icon>add_circle</mat-icon> Cadastrar Produto
+    </a>
+    <a mat-button routerLink="/inicio">
+      <mat-icon>storefront</mat-icon> Ver Loja
+    </a>
+    <button mat-raised-button color="warn" (click)="logout()" class="btn-logout">
+      <mat-icon>logout</mat-icon> Sair
+    </button>
+  </div>
+</mat-toolbar>

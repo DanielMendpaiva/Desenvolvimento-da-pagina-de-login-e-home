@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Jogo 1 - Cyberpunk Neon",
+      "descricao": "Ação futurista com gráficos neon em ritmo acelerado.",
+      "foto": "./assets/img/jogo1.PNG",
+      "preco": 300.00
+    },
+    {
+      "id": 2,
+      "produto": "Jogo 2 - Pixel Adventure",
+      "descricao": "Plataforma clássico 16-bit com fases desafiadoras e moedas.",
+      "foto": "./assets/img/jogo2.PNG",
+      "preco": 200.00
+    },
+    {
+      "id": 3,
+      "produto": "Jogo 3 - Arena Esports",
+      "descricao": "Simulador competitivo online para os melhores jogadores.",
+      "foto": "./assets/img/jogo3.PNG",
+      "preco": 400.00
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "admin",
+      "senha": "123"
+    }
+  ]
+}

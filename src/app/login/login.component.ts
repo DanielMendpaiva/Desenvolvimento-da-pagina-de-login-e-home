@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { AuthService } from '../servicos/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -10,15 +10,19 @@ export class LoginComponent {
   usuario: string = '';
   senha: string = '';
 
-  constructor(private router: Router) {}
+  constructor(private authService: AuthService) {}
 
   fazerLogin(): void {
-    if (this.usuario && this.senha) {
-      alert(`Bem-vindo(a), ${this.usuario}!`);
-      this.router.navigate(['/inicio']);
-    } else {
+    if (!this.usuario || !this.senha) {
       alert('Por favor, preencha o usuário e a senha.');
+      return;
+    }
+
+    const sucesso = this.authService.fazerLogin(this.usuario, this.senha);
+    if (!sucesso) {
+      alert('Usuário ou senha incorretos! Dica: utilize usuário "admin" e senha "123".');
     }
   }
 }
+
 
